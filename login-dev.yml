@@ -5,12 +5,11 @@ spring:
   profiles: login1
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:@localhost:1521:ORCL
+    url: jdbc:oracle:thin:@127.0.0.1:1521:ORCL
 
 eureka:
   instance:
     prefer-ip-address: true
-    hostname: ${spring.cloud.client.ip-address}
     instance-id: login8001
   client:
     serviceUrl:
