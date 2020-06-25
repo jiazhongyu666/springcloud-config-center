@@ -4,6 +4,7 @@ server:
 spring:
   application:
     name: cloud-login-service
+  profiles: login1
     
 eureka:
   instance:
