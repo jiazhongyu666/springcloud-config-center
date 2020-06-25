@@ -4,7 +4,6 @@ server:
 spring:
   application:
     name: cloud-login-service
-  profiles: login1
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: oracle.jdbc.OracleDriver
@@ -34,7 +33,6 @@ server:
 spring:
   application:
     name: cloud-payment-service
-  profiles: login2
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
