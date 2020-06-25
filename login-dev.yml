@@ -5,3 +5,8 @@ spring:
   application:
     name: cloud-login-service
 
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.jzy.entity
+  configuration:
+    map-underscore-to-camel-case: true
