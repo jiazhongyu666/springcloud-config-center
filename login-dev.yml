@@ -4,11 +4,4 @@ server:
 spring:
   application:
     name: cloud-login-service
-  profiles: login1
-  
-eureka:
-  instance:
-    instance-id: login8001
-  client:
-    serviceUrl:
-      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+
