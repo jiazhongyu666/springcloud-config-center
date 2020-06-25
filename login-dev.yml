@@ -53,3 +53,16 @@ mybatis:
   type-aliases-package: com.jzy.entity
   configuration:
     map-underscore-to-camel-case: true
+
+#--spring.profiles.active=payment1
+  #@HystrixCommand(fallbackMethod = "paymentInfo_TimeOutHandler",commandProperties = {
+  #@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "3000")
+#})
+
+#//服务熔断  默认开启状态
+#@HystrixCommand(fallbackMethod = "paymentCircuitBreaker_fallback",commandProperties = {
+#@HystrixProperty(name = "circuitBreaker.enabled",value = "true"), //是否开启断路器
+#@HystrixProperty(name = "circuitBreaker.requestVolumeThreshold",value = "10"), //请求次数
+#@HystrixProperty(name = "circuitBreaker.sleepWindowInMilliseconds",value = "10000"), //时间窗口期
+#@HystrixProperty(name = "circuitBreaker.errorThresholdPercentage",value = "60"), //失败率
+#})
