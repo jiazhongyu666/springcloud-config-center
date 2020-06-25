@@ -2,9 +2,9 @@ server:
   port: 8001
 
 spring:
-  profiles: login1
-
-
+  application:
+    name: cloud-login-service
+    
 eureka:
   instance:
     prefer-ip-address: true
