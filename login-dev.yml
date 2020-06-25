@@ -8,8 +8,6 @@ spring:
   
 eureka:
   instance:
-    prefer-ip-address: true
-    hostname: ${spring.cloud.client.ip-address}
     instance-id: login8001
   client:
     serviceUrl:
