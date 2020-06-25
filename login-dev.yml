@@ -1,16 +1,16 @@
+server:
+  port: 8001
+
 spring:
   profiles: login1
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: oracle.jdbc.OracleDriver
     url: jdbc:oracle:thin:@localhost:1521:ORCL
-    username: jzy
-    password: root
 
 eureka:
   instance:
     prefer-ip-address: true
-    hostname: jzy
+    hostname: ${spring.cloud.client.ip-address}
     instance-id: login8001
   client:
     serviceUrl:
