@@ -6,12 +6,10 @@ spring:
     name: cloud-login-service
   datasource:
     driver-class-name: oracle.jdbc.OracleDriver
-    url: jdbc:oracle:thin:127.0.0.1:1521:ORCL
     
 eureka:
   instance:
     prefer-ip-address: true
-    hostname: jzy
     instance-id: login8001
   client:
     serviceUrl:
